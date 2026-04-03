@@ -1,3 +1,5 @@
+cd ~/YTVIEW/ytview-next
+cat > netlify.toml << 'EOF'
 [build]
   command = "npm run build"
   publish = ".next"
@@ -6,3 +8,4 @@
   from = "/*"
   to = "/index.html"
   status = 200
+EOF
